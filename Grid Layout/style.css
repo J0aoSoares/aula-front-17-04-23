@@ -12,34 +12,15 @@ body{
 }
 .grid-container{
     display: grid;
-    grid-template-areas: 
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
     background-color: rgb(155, 38, 75);
-    gap: 5px;
-    padding: 2px;
+    padding: 6px;
+    gap: 6px;
     border-radius: 10px;
+    grid-template-columns: auto auto auto auto;
 
 }
 .grid-container > div{
     background-color: rgb(197, 66, 108);
-    text-align: center;
-    padding: 5px;
     border-radius: 10px;
-}
-.item1{
-    grid-area: header;
-}
-.item2{
-    grid-area: menu;
-}
-.item3{
-    grid-area: main;
-}
-.item4{
-    grid-area: right;
-}
-.item5{
-    grid-area: footer;
+    gap:6px;
 }
